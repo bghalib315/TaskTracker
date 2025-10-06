@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskTracker.Data\TaskTracker.Data.csproj" />
+    <ProjectReference Include="..\TaskTracker.Infrastructure\TaskTracker.Infrastructure.csproj" />
+    <ProjectReference Include="..\TaskTracker.Services\TaskTracker.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Authentaction\Commands\Mapping\" />
+    <Folder Include="Features\Authorization\Commands\Mapping\" />
+    <Folder Include="Features\Authorization\Queries\" />
+    <Folder Include="Features\Tags\Commands\Handlers\" />
+    <Folder Include="Features\Tags\Commands\Mapping\" />
+    <Folder Include="Features\Tags\Commands\Models\" />
+    <Folder Include="Features\Tags\Commands\Valditions\" />
+    <Folder Include="Features\Tags\Queries\Handlers\" />
+    <Folder Include="Features\Tags\Queries\Mapping\" />
+    <Folder Include="Features\Tags\Queries\Models\" />
+    <Folder Include="Features\Tags\Queries\Valditions\" />
+    <Folder Include="Features\Tasks\Commands\Valditions\" />
+    <Folder Include="Features\Tasks\Queries\Valditions\" />
+    <Folder Include="Features\Teams\Commands\Handlers\" />
+    <Folder Include="Features\Teams\Commands\Mapping\" />
+    <Folder Include="Features\Teams\Commands\Models\" />
+    <Folder Include="Features\Teams\Commands\Valditions\" />
+    <Folder Include="Features\Teams\Queries\Handlers\" />
+    <Folder Include="Features\Teams\Queries\Mapping\" />
+    <Folder Include="Features\Teams\Queries\Models\" />
+    <Folder Include="Features\Teams\Queries\Valditions\" />
+    <Folder Include="Features\user\" />
+    <Folder Include="Features\tenant\Commands\Validators\" />
+    <Folder Include="Features\Users\Commands\Validators\" />
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
